@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="minibill" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/minibill" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++17" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="libopengl32" />
+					<Add library="libgdi32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/minibill" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++17" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libopengl32" />
+					<Add library="libgdi32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../framework/engine.cpp" />
+		<Unit filename="../framework/engine.hpp" />
+		<Unit filename="../framework/game.hpp" />
+		<Unit filename="../framework/scene.cpp" />
+		<Unit filename="../framework/scene.hpp" />
+		<Unit filename="../game_cpp/game.cpp" />
+		<Unit filename="../game_cpp/main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
